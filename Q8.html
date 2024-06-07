@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-8</title>
+</head>
+<body>
+    
+
+    <script>
+
+                function getHighGrades(students) {
+                return students
+                    .filter((student) => student.grade > 80).map((student) => student.name);  
+                   
+                }
+
+                const students = [
+                { name: 'Alice', grade: 90 },
+                { name: 'Bob', grade: 70 },
+                { name: 'Charlie', grade: 85 }
+                ];
+
+                
+                console.log(getHighGrades(students)); //['Alice', 'Charlie']
+
+          
+
+
+ 
+    </script>
+</body>
+</html>

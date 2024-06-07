@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-5</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function sumOfSquaredNumbers(arr) {
+        return arr
+            .filter((item) => typeof item === 'number').map((number) => number * number).reduce((accumulator, currentValue) => accumulator + currentValue);
+         
+        }
+
+        const array = [4, 'hello', 3, true, 'Uki', 5];
+        
+        console.log(sumOfSquaredNumbers(array)); // Output: 50 (4*4 + 3*3 + 5*5)
+
+
+ 
+    </script>
+</body>
+</html>

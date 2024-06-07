@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-19</title>
+</head>
+<body>
+    
+
+    <script>
+
+        
+                    function registerUser(users, newUser) {
+                    // Check if the username already exists
+                    const userExists = users.find((user) => user.username === newUser.username);
+
+                    if (userExists) {
+                        console.log("Username already exists. Registration failed.");
+                        return users;
+                    }
+
+                    // Add the new user to the array
+                    users.push(newUser);
+                    console.log("User registered successfully.");
+                    return users;
+                    }
+
+
+                    const users = [
+                    { username: 'Daneej', email: 'daneej@gmail.com' },
+                    { username: 'ahnaf', email: 'ahnaf@gmail.com' }
+                    ];
+
+                    const newUser = { username: 'Charlie', email: 'charlie@gmail.com' };
+                    const updatedUsers = registerUser(users, newUser);
+
+                    console.log(updatedUsers);
+                    
+
+                    const anotherNewUser = { username: 'Daneej', email: 'daneej2@gmail.com'};
+                    registerUser(users, anotherNewUser);
+                    // Output: Username already exists. Registration failed.
+
+
+
+
+
+    </script>
+</body>
+</html>
